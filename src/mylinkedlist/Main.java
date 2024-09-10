@@ -12,7 +12,12 @@ public class Main {
         linkedList.addLast(6);
         linkedList.display();
 
-        linkedList.deleteUseWhile(2); 
+        linkedList.deleteUseWhile(2);
+        System.out.println("Chuoi sau khi xoa phan tu tai index 2:"); 
+        linkedList.display();
+
+        linkedList.sort();
+        System.out.println("Chuoi sau khi sap xep:");
         linkedList.display();
     }
 }

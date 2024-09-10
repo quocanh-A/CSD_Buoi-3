@@ -147,5 +147,18 @@ public class MyLinkedList {
     }
 
     // BTVN2: Viết cho anh hàm sort()
-
+    public void sort() {
+        if (head == null || head.next == null) { 
+            return;
+        }
+        for (Node i = head; i != null; i = i.next) {
+            for (Node j = i.next; j != null; j = j.next) {
+                if (i.data < j.data) { 
+                    int temp = i.data;
+                    i.data = j.data;
+                    j.data = temp;
+                }
+            }
+        }
+    }
 }
